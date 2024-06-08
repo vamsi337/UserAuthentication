@@ -1,13 +1,11 @@
 const express= require ('express');
+const router= require('./routes/user.route')
 const dotenv = require('dotenv');
 
 dotenv.config();
 
 const app= express();
-
-app.get('/app', (req,res)=>{
-    res.send('Get route')
-})
+app.use('/app', router); // SIGNUP ROUTER
 
 const port = process.env.PORT || 3000
 app.listen(port, ()=>{
