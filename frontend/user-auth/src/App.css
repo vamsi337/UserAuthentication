@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.user-register {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+.register-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007BFF;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.register-button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user-register p {
+  margin-top: 20px;
+}
+
+.user-register a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.user-register a:hover {
+  text-decoration: underline;
+}
+
+
+/* Styles for the container of the login form */
+.user-login {
+  display: flex; /* Display as flexbox to center content */
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center items horizontally */
+  margin-top: 50px; /* Add top margin for spacing */
+}
+
+/* Styles for the main heading */
+h1 {
+  font-size: 24px; /* Set font size */
+  margin-bottom: 20px; /* Add bottom margin for spacing */
+}
+
+/* Styles for the login form */
+.login-form {
+  width: 300px; /* Set width of the form */
+  padding: 20px; /* Add padding inside the form */
+  border-radius: 5px; /* Round the corners */
+  background-color: #fff; /* White background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+/* Styles for form input fields */
+.form-input {
+  width: 100%; /* Take full width of the parent */
+  margin-bottom: 10px; /* Add bottom margin for spacing between inputs */
+  padding: 10px; /* Add padding inside the input fields */
+  border: 1px solid #ccc; /* Add a border with light gray color */
+  border-radius: 3px; /* Round the corners of input fields */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+/* Styles for the login button */
+.login-button {
+  width: 100%; /* Take full width of the parent */
+  padding: 10px; /* Add padding inside the button */
+  border: none; /* Remove border */
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  border-radius: 3px; /* Round the corners of the button */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Hover styles for the login button */
+.login-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styles for the paragraph below the form */
+p {
+  margin-top: 10px; /* Add top margin for spacing */
+  font-size: 14px; /* Set font size */
+}
+
+/* Styles for the Register button inside the paragraph */
+button {
+  border: none; /* Remove border */
+  background-color: transparent; /* Transparent background */
+  color: #007bff; /* Blue text color */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Hover styles for the Register button */
+button:hover {
+  text-decoration: underline; /* Underline text on hover */
 }
